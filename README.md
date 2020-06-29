@@ -4,7 +4,7 @@
 Η εφαρμογή εκτελεί αφέσβεση του κόκκινου LED υπό τον έλεγχο του SW1 (push to start/push to stop). Αντίστοιχα εκτελεί αφέσβεση του πράσινου LED υπό τον έλεγχο του SW2 (push to start/push to stop). Το πράσινο LED αναβοσβήνει με διπλάσια συχνότητα από το κόκκινο LED.
 </h4>
 <ul>
-<li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Project/S-LED-BUTTON.ino" target="_blank">Κώδικας</li>
+<li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Project/S-LED-BUTTON.ino" target="_blank">Κώδικας</a></li>
 </ul>
 
 <h1> 2o Project </h1>
@@ -13,5 +13,5 @@
 Για την υλοποίηση της εφαρμογής χρειάστηκε να βραχυκυκλωθούν εξωτερικά τα pins Tx και Rx κάτι το οποίο δεν ήταν εφικτό, για αυτό κάναμε χρήση της εντολής UCA0STAT |=  UCLISTEN.
 </h4>
 <ul>
-<li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Project/Two-msp-communication.ino" target="_blank">Κώδικας</li>
+<li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Project/Two-msp-communication.ino" target="_blank">Κώδικας</a></li>
 </ul>
