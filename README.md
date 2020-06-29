@@ -15,4 +15,3 @@
 <ul>
 <li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Project/Two-msp-communication.ino" target="_blank">Κώδικας</li>
 </ul>
-
