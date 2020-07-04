@@ -14,5 +14,5 @@
 Αντίστοιχα, η εφαρμογή μπορεί να δέχεται από τον δέκτη του UART χαρακτήρες για την δημιουργία ενός string (μήκους το πολύ 20 χαρακτήρων). Κάθε character string θεωρείτε ότι τερματίζεται με <CR>. Όταν ολοκληρωθεί η λήψη του string αυτό αποστέλλεται στον συνδεμένο Η/Υ.
 Για την υλοποίηση της εφαρμογής χρειάστηκε να βραχυκυκλωθούν εξωτερικά τα pins Tx και Rx κάτι το οποίο δεν ήταν εφικτό, για αυτό κάναμε χρήση της εντολής UCA0STAT |=  UCLISTEN. </h4>
 <ul>
-<li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Project/Two-msp-communication.ino" target="_blank">Κώδικας</a></li>
+<li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Project/Two-msp-communication.ino" target="_blank"><b>Κώδικας</b></a></li>
 </ul>
