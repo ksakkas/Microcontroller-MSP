@@ -9,7 +9,7 @@
 <p>Copyright © 2020 Κωνσταντίνος Σακκάς. Με την επιφύλαξη παντός δικαιώματος</p>
 <hr>
 <ul>
-<li><a href="https://github.com/ksakkas/Learn-VHDL/blob/master/Code/entity.vhd">Οντότητα</a></li> 
+<li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Code/Greek/blink.ino">Blink Led (Αναβόσμημα led)</a></li> 
 
 
 </ul>
