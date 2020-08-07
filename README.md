@@ -24,10 +24,12 @@
 
 <h3>My Project</h3>
 <ul>
-<li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Project/project_button.ino">Button Project</a></li> 
-<li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Project/serial_led.ino">Serial and Led Project</a></li> 
-<li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Project/serial_button.ino">Serial Led and Button Project</a></li> 
-<li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Project/breathing_ef.ino">Breathing Effect with Duty Cycle</a></li> 
+<li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Project/Greek/project_button.ino">Button Project</a></li> 
+<li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Project/Greek/serial_led.ino">Serial and Led Project</a></li> 
+<li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Project/Greek/serial_button.ino">Serial Led and Button Project</a></li> 
+<li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Project/Greek/breathing_ef.ino">Breathing Effect with Duty Cycle</a></li> 
+<li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Project/Greek/s_led_button.ino">Serial Led and Buttons (Project 1)</a></li> 
+<li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Project/Greek/s_led_button.ino">Communication two MSP (Project 2)</a></li> 
 
 </ul>
 </body>
