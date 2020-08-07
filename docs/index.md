@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to GitHub
 
 You can use the [editor on GitHub](https://github.com/ksakkas/Microcontroller-MSP430/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
