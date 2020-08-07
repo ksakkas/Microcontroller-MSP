@@ -1,9 +1,5 @@
 # Learn to programming in the microcontroller MSP430
-###  Τμήμα Πληροφορικής & Τηλεπικοινωνιών
-### Κωνσταντίνος Σακκάς
-### Copyright © 2020 Κωνσταντίνος Σακκάς. Με την επιφύλαξη παντός δικαιώματος
-#
-[Hello world (Εμφάνιση κειμένου)](https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Code/Greek/hello.ino)
+
 You can use the [editor on GitHub](https://github.com/ksakkas/Microcontroller-MSP430/edit/master/%20(root)/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
