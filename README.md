@@ -3,7 +3,7 @@
 
 </head>
 <body>
-<h1>Learn to program the microcontroller MSP430</h1>
+<h1>Learn to programming in the microcontroller MSP430</h1>
 <p> Τμήμα Πληροφορικής & Τηλεπικοινωνιών </p>
 <p> Κωνσταντίνος Σακκάς</p>
 <p>Copyright © 2020 Κωνσταντίνος Σακκάς. Με την επιφύλαξη παντός δικαιώματος</p>
@@ -29,7 +29,7 @@
 <li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Project/Greek/serial_button.ino">Serial Led and Button Project</a></li> 
 <li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Project/Greek/breathing_ef.ino">Breathing Effect with Duty Cycle</a></li> 
 <li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Project/Greek/s_led_button.ino">Serial Led and Buttons (Project 1)</a></li> 
-<li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Project/Greek/s_led_button.ino">Communication two MSP (Project 2)</a></li> 
+<li><a href="https://github.com/ksakkas/Microcontroller-MSP430/blob/master/Project/Greek/tew_msp_communication.ino">Communication two MSP (Project 2)</a></li> 
 
 </ul>
 </body>

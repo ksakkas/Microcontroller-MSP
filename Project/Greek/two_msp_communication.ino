@@ -1,11 +1,11 @@
-  /*
-This code was designed by Konstantinos Sakkas on June 2th 2020.
-It is intended for academic use at the Department of Informatics and Telecommunication of University of Ioannina.
-*/
-
 /*
-This code was designed and compiled at Energia ver. 1.8.11E23
-It was designed for use with TI MSP430F5529
+Αυτός ο κωδικός σχεδιάστηκε από τον Κωνσταντίνο Σάκκα.
+Προορίζεται για ακαδημαϊκή χρήση στο Τμήμα Πληροφορικής και Τηλεπικοινωνιών του Πανεπιστημίου
+Ιωαννίνων και του github https://ksakkas.github.io/Microcontroller-MSP430/.
+*/
+/*
+Αυτός ο κώδικας σχεδιάστηκε και εκτελέστηκε στο πρόγραμμα Energia έκδοσης 1.8.11E23
+Σχεδιάστηκε για χρήση με τον μικροεπεξεργαστή MSP430F5529
 */
 
 /* 1* Να σχεδιαστεί και υλοποιηθεί εφαρμογή η οποία εκτελεί αποστολή και λήψη συμβολοσειρών χαρακτήρων (character strings), 
@@ -19,63 +19,63 @@ It was designed for use with TI MSP430F5529
  * 8* Όταν ολοκληρωθεί η λήψη του string αυτό αποστέλλεται στον συνδεμένο Η/Υ. 
  */
 
-void setup() {                               //Function of initialization of system parameters and materials.
-                                            //Initialize both serial ports: 
-    Serial.begin(9600);                    //It is the rate of transmission in bits per sec (for Serial).
-    Serial1.begin(9600);                  //It is the rate of transmission in bits per sec (for Serial1).
-    pinMode(RED_LED, OUTPUT);            //Declare RED_LED as output
-    pinMode(GREEN_LED, OUTPUT);         //Declare GREEN_LED as output
+void setup() {                               //Συνάρτηση αρχικοποίησης παραμέτρων και υλικών συστήματος
+                                            //Αρχικοποιήση και των δύο σειριακών θυρών:
+    Serial.begin(9600);                    //Ρυθμός μετάδοσης σε bits / sec (για Serial).
+    Serial1.begin(9600);                  //Ρυθμός μετάδοσης σε bits / sec (για Serial1).
+    pinMode(RED_LED, OUTPUT);            //Δήλωση RED_LED ως έξοδο
+    pinMode(GREEN_LED, OUTPUT);         //Δήλωση GREEN_LED ως έξοδο
     UCA0STAT |=  UCLISTEN;             //Loopback (UART) 
 
-  Serial.println("Department Informatics & Telecommunication");        //Show message at the beginning of the program
-  Serial.println("Microprocessor Systems");                           //Show message at the beginning of the program
-  Serial.println("Final Implementation of the Project (Part 1)");    //Show message at the beginning of the program
-  Serial.println("");                                               //Show message at the beginning of the program
-  Serial.println("Give character string");                         //Show message at the beginning of the program
-  Serial.println("");                                             //Show message at the beginning of the program
+  Serial.println("Department Informatics & Telecommunication");        //Εμφάνιση μηνύματος στην έναρξη του προγράμματος
+  Serial.println("Microprocessor Systems");                           //Εμφάνιση μηνύματος στην έναρξη του προγράμματος
+  Serial.println("Final Implementation of the Project (Part 1)");    //Εμφάνιση μηνύματος στην έναρξη του προγράμματος
+  Serial.println("");                                               //Εμφάνιση μηνύματος στην έναρξη του προγράμματος
+  Serial.println("Give character string");                         //Εμφάνιση μηνύματος στην έναρξη του προγράμματος
+  Serial.println("");                                             //Εμφάνιση μηνύματος στην έναρξη του προγράμματος
 
 }
 int c=0;
-void loop() {                                         //Main repetitive function.
-    if (Serial.available())                          //In this step,by using  if command checks if serial entry is available.
+void loop() {                                         //Κύρια επαναληπτική συνάρτηση
+    if (Serial.available())                          //Αν η σειριακή είσοδος είναι διαθέσιμη
     {                     
-      String mes = Serial.readString();            //1, 2* In the variable mes we ​​assign the value given by the user to the serial by converting it to string.
-      int s=strlen(mes.c_str());                  //In the variable s we ​​assign the value to length to mes
-      Serial.println("Reading the String");      //Show message at the beginning of the program
-      for(int i=0; i<s; i++)                    //Repettiting loop creation.
+      String mes = Serial.readString();            //1, 2* Στην μεταβλητή mes εκχωρούμε την τιμή που έδωσε ο χρήστης στην σειριακή μετατρέποντας το σε αλφαριθμητικό 
+      int s=strlen(mes.c_str());                  //Στη μεταβλητή s αντιστοιχίζουμε την τιμή σε μήκος της mes
+      Serial.println("Reading the String");      //Εμφάνιση μηνύματος
+      for(int i=0; i<s; i++)                    //Δημιουργία βρόχου επανάληψης.
       {
-        digitalWrite(RED_LED, HIGH); //It gives a reasonable value of 1 (HIGH) to the led, ie it turns it on.
-        delay(50);                  //Delay for 50 ms = 0.05 sec
-        digitalWrite(RED_LED, LOW); //It gives a reasonable value of 0 (LOW) to the led, ie it turns it off.
-        delay(50);                //Delay for 50 ms = 0.05 sec
+        digitalWrite(RED_LED, HIGH); //Δίνει λογική τιμή 1 (HIGH) στο led δηλαδή το ανάβει
+        delay(50);                  //Σταματά την εκτέλεση για 500 ms = 0.5 sec
+        digitalWrite(RED_LED, LOW); //Δίνει λογική τιμή 0 (LOW) στο led δηλαδή το σβήνει
+        delay(50);                //Σταματά την εκτέλεση για 500 ms = 0.5 sec
       }
-        for (int i=0; i<s; i++)              //Repettiting loop creation.
+        for (int i=0; i<s; i++)              //Δημιουργία βρόχου επανάληψης.
         {             
-          Serial1.write(mes[i]);                    //1,4* Write mes to Serial1
+          Serial1.write(mes[i]);                    //1,4* Γράψτε το mes στο Serial1
         }
 
     }
   
-  if (Serial1.available())   //In this step,by using  if command checks if serial entry is available.
+  if (Serial1.available())   //Αν η σειριακή1 είσοδος είναι διαθέσιμη
    {               
-    String mes = Serial1.readString();    //1, 5* In the variable mes we ​​assign the value given by the user to the serial by converting it to string.
-    int s=strlen(mes.c_str());           //In the variable s we ​​assign the value to length to mes
-    Serial.println(s);                  //Show s
-   if(s>21)                            //3, 6* If the s > 21
+    String mes = Serial1.readString();    //1, 5*  Στην μεταβλητή mes εκχωρούμε την τιμή που έδωσε ο χρήστης στην σειριακή μετατρέποντας το σε αλφαριθμητικό 
+    int s=strlen(mes.c_str());           //Στη μεταβλητή s αντιστοιχίζουμε την τιμή σε μήκος του mes
+    Serial.println(s);                  //Εμφάνιση s
+   if(s>21)                            //3, 6* Αν το s > 21
   {
-    Serial.println("You have exceeded the limit");     //Show message
-    Serial.println("Press the restart button to give new character string");     //Show message
-    Serial.println("");     //Show message
-    Serial.println("");     //Show message
-    digitalWrite(RED_LED, HIGH); //It gives a reasonable value of 1 (HIGH) to the led, ie it turns it on.
-    exit(1);                                 //Return 1
+    Serial.println("You have exceeded the limit");     //Εμφάνιση μηνύματος
+    Serial.println("Press the restart button to give new character string");     //Εμφάνιση μηνύματος
+    Serial.println("");     //Εμφάνιση μηνύματος
+    Serial.println("");     //Εμφάνιση μηνύματος
+    digitalWrite(RED_LED, HIGH); //Δίνει λογική τιμή 1 (HIGH) στο led δηλαδή το ανάβει
+    exit(1);                                 //Επιστρέφει 1
   }
-    for (int i=0; i<s; i++){               //Repettiting loop creation.
-    digitalWrite(GREEN_LED, HIGH);       //It gives a reasonable value of 1 (HIGH) to the led, ie it turns it on.
-    delay(200);                         //Delay for 500 ms = 0.5 sec
-    Serial.write(mes[i]);              //1, 8* Write mes to Serial
-    digitalWrite(GREEN_LED, LOW);     //It gives a reasonable value of 0 (LOW) to the led, ie it turns it off.
-    delay(200);                      //Delay for 500 ms = 0.5 sec
+    for (int i=0; i<s; i++){               //Δημιουργία βρόχου επανάληψης.
+    digitalWrite(GREEN_LED, HIGH);       //Δίνει λογική τιμή 1 (HIGH) στο led δηλαδή το ανάβει
+    delay(200);                         //Σταματά την εκτέλεση για 200 ms = 0.2 sec
+    Serial.write(mes[i]);              //1, 8* Γράψτε το mes στο Serial
+    digitalWrite(GREEN_LED, LOW);     //Δίνει λογική τιμή 0 (LOW) στο led δηλαδή το σβήνει
+    delay(200);                      //Σταματά την εκτέλεση για 200 ms = 0.2 sec
     }
   }
 }
